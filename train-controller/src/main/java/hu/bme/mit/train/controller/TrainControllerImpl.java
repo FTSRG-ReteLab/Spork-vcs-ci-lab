@@ -28,7 +28,12 @@ public class TrainControllerImpl implements TrainController {
 		return referenceSpeed;
 	}
 
-	// pff... why override?
+	@Override
+	public void setSpeedLimit(int speedLimit) {
+		this.speedLimit = speedLimit;
+		enforceSpeedLimit();
+		
+	}
 
 	private void enforceSpeedLimit() {
 		if (referenceSpeed > speedLimit) {
