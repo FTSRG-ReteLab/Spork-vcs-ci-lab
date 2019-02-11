@@ -24,6 +24,12 @@ public class TrainSystemTest {
 
 		sensor.overrideSpeedLimit(50);
 	}
+
+	@Test
+	public void setSpeedLimit() {
+		sensor.overrideSpeedLimit(100);
+		Assert.assertEquals(100, controller.getSpeedLimit());
+	}
 	
 	@Test
 	public void OverridingJoystickPosition_IncreasesReferenceSpeed() {
