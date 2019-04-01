@@ -43,6 +43,7 @@ public class TrainControllerImpl extends Thread implements TrainController {
 			}
 		} catch (InterruptedException e) {
 			System.out.println("rip");
+			Thread.currentThread().interrupt();
 		}
 	}
 
