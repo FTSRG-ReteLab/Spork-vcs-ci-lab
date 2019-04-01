@@ -38,11 +38,11 @@ public class TrainControllerImpl extends Thread implements TrainController {
 	public void run() {
 		try {
 			while (true) {
-				Thread.sleep(1000);
+				Thread.sleep(1001);
 				followSpeed();
 			}
 		} catch (InterruptedException e) {
-			// It's fine
+			System.out.println("rip");
 		}
 	}
 
