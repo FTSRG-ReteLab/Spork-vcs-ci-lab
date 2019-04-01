@@ -56,7 +56,7 @@ public class TrainControllerImpl implements TrainController {
 	
 	@Override
 	public void updateReferenceSpeed() {
-		while(True) {
+		while(true) {
 			long start = System.currentTimeMillis();
 			long elapsed = 0L;
 			
