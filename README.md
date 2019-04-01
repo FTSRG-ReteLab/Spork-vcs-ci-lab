@@ -53,3 +53,11 @@ The figure below illustrates this behavior using an example.
 - Egy
 - **király**
 - felsorolás
+
+## Unit test for Sensor
+
+The Unit tests for the TrainSensor are the following:
+- On a value that is higher than the current reference speed alarm should not be raised
+- On a value that is lower than 0 alarm should be raised
+- On a value that is greater than 500 alarm should be raised
+- On a value that is less than half the reference speed an alarm should be raised
